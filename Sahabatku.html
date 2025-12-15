@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahabat Pink Neon</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <!-- Custom Style -->
+    <style>
+        body {
+            background-color: #ffe6f2;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* NEON EFFECT */
+        .neon {
+            color: #ff4da6;
+            text-shadow: 
+                0 0 5px #ff4da6,
+                0 0 10px #ff4da6,
+                0 0 20px #ff1a8c,
+                0 0 40px #ff1a8c;
+        }
+
+        .neon-hover:hover {
+            text-shadow:
+                0 0 10px #ff66cc,
+                0 0 20px #ff66cc,
+                0 0 30px #ff1a8c;
+            transition: 0.3s ease;
+        }
+
+        .navbar {
+            background-color: #ff80bf !important;
+        }
+
+        .hero {
+            animation: fadeIn 1.5s ease;
+        }
+
+        .friend-card {
+            transition: transform .3s ease, box-shadow .3s ease;
+            background: white;
+            border-radius: 15px;
+        }
+
+        .friend-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(255, 0, 128, 0.3);
+        }
+
+        .gallery-img {
+            border-radius: 15px;
+            transition: transform .3s ease;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 0, 128, 0.4);
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- BACKGROUND MUSIC -->
+<audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mp3">
+</audio>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold neon-hover" href="#">Sahabat Pink Neon</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link neon-hover" href="#about">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link neon-hover" href="#friends">Sahabat</a></li>
+        <li class="nav-item"><a class="nav-link neon-hover" href="#gallery">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link neon-hover" href="#message">Pesan</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="text-center py-5 hero">
+  <div class="container">
+    <h1 class="display-4 neon">Website Untuk Sahabat Tersayang 💖</h1>
+    <p class="lead">Tempat menyimpan kenangan manis dan cerita lucu bersama kalian.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-5">
+  <div class="container text-center">
+    <h2 class="mb-4 neon">Tentang Persahabatan Kita</h2>
+    <p class="mx-auto" style="max-width: 700px;">
+      Persahabatan kita itu seperti boba: manis, bikin nagih, dan selalu bikin bahagia.  
+      Terima kasih sudah jadi bagian penting dalam hidup ini.
+    </p>
+  </div>
+</section>
+
+<!-- FRIENDS -->
+<section id="friends" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-5 neon">Empat Sahabat Hebat 🌟</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-3">
+        <div class="p-3 friend-card text-center">
+          <img src="bagus.jpg" class="rounded-circle mb-3" width="250">
+          <h5 class="fw-bold neon-hover">Nala</h5>
+          <p>Si paling lucu, selalu bikin suasana rame.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="p-3 friend-card text-center">
+          <img src="ahsan.jpg" class="rounded-circle mb-3" width="250">
+          <h5 class="fw-bold neon-hover">Dayat</h5>
+          <p>Bijak banget, tempat curhat paling aman.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="p-3 friend-card text-center">
+          <img src="farel.jpg" class="rounded-circle mb-3" width="250">
+          <h5 class="fw-bold neon-hover">Leza</h5>
+          <p>Selalu ada ide gila yang bikin seru.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="p-3 friend-card text-center">
+          <img src="gevano.jpg" class="rounded-circle mb-3" width="250">
+          <h5 class="fw-bold neon-hover">Rizki</h5>
+          <p>Paling kalem tapi perhatian banget.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4 neon">Galeri Kenangan 📸</h2>
+    <div class="row g-3">
+      <div class="col-md-4"><img src="esku.jpg" class="img-fluid gallery-img"></div>
+      <div class="col-md-4"><img src="ber.jpg" class="img-fluid gallery-img"></div>
+      <div class="col-md-4"><img src="bintang.jpg" class="img-fluid gallery-img"></div>
+    </div>
+  </div>
+</section>
+
+<!-- MESSAGE -->
+<section id="message" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-4 neon">Kirim Pesan 💌</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form class="p-4 rounded" style="background: #ffd6ea;">
+          <div class="mb-3">
+            <label class="form-label">Nama</label>
+            <input type="text" class="form-control" placeholder="Nama kamu">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Pesan</label>
+            <textarea class="form-control" rows="4" placeholder="Tulis pesan manis untuk sahabatmu"></textarea>
+          </div>
+          <button class="btn w-100 neon-hover" style="background-color: #ff4da6; color: white;">Kirim</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-3" style="background-color: #ff80bf; color: white;">
+  <p class="mb-0 neon-hover">Dibuat dengan cinta dan tawa 💕</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
